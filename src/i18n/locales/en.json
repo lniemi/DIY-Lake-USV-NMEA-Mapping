@@ -2,7 +2,8 @@
   "nav": {
     "home": "Home",
     "blog": "Project Log",
-    "docs": "Documentation"
+    "docs": "Documentation",
+    "graph": "Knowledge Graph"
   },
   "common": {
     "readMore": "Read more",
@@ -48,5 +49,30 @@
     "tableOfContents": "Contents",
     "onThisPage": "On this page",
     "gettingStarted": "Getting Started"
+  },
+  "graph": {
+    "title": "Knowledge Graph",
+    "subtitle": "Visual map of project concepts and documentation",
+    "searchPlaceholder": "Search nodes...",
+    "filters": "Filters",
+    "clearFilters": "Clear all",
+    "nodeTypes": "Node Types",
+    "edgeTypes": "Relationship Types",
+    "categories": "Categories",
+    "documents": "Documents",
+    "concepts": "Concepts",
+    "document": "Document",
+    "concept": "Concept",
+    "legend": "Legend",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetView": "Reset view",
+    "toggleLabels": "Toggle labels",
+    "openDoc": "Open documentation",
+    "connectedNodes": "Connected nodes",
+    "noResults": "No matching nodes",
+    "clickToOpen": "Click to view details",
+    "close": "Close",
+    "error": "Failed to load knowledge graph"
   }
 }

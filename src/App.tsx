@@ -5,6 +5,7 @@ import { Blog } from './pages/Blog';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { Docs } from './pages/Docs';
 import { DocPageWrapper } from './pages/DocPageWrapper';
+import { KnowledgeGraphPage } from './pages/KnowledgeGraphPage';
 import { NotFound } from './components/common/NotFound';
 
 function LanguageRedirect() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="blog/:slug" element={<BlogPostPage />} />
           <Route path="docs" element={<Docs />} />
           <Route path="docs/*" element={<DocPageWrapper />} />
+          <Route path="graph" element={<KnowledgeGraphPage />} />
         </Route>
 
         {/* Finnish routes */}
@@ -37,6 +39,7 @@ function App() {
           <Route path="blogi/:slug" element={<BlogPostPage />} />
           <Route path="dokumentaatio" element={<Docs />} />
           <Route path="dokumentaatio/*" element={<DocPageWrapper />} />
+          <Route path="tietograafi" element={<KnowledgeGraphPage />} />
         </Route>
 
         {/* 404 fallback */}

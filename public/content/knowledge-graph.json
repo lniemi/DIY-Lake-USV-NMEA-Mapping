@@ -1,0 +1,479 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "projectName": "DIY Lake USV NMEA Mapping",
+    "description": {
+      "en": "Knowledge graph of concepts and documentation for the DIY lake bathymetry mapping project",
+      "fi": "Tietograafi DIY-järvisyvyyskartoitusprojektin käsitteistä ja dokumentaatiosta"
+    }
+  },
+  "concepts": [
+    {
+      "id": "usv",
+      "type": "concept",
+      "labels": {
+        "en": "Unmanned Surface Vehicle",
+        "fi": "Miehittämätön pinta-alus"
+      },
+      "descriptions": {
+        "en": "A remotely operated or autonomous boat platform used to carry mapping equipment across the water surface.",
+        "fi": "Kauko-ohjattava tai autonominen venealusta, jota käytetään kartoituslaitteiden kuljettamiseen vesistössä."
+      },
+      "aliases": {
+        "en": ["USV", "unmanned boat", "autonomous surface vehicle"],
+        "fi": ["USV", "miehittämätön vene"]
+      },
+      "semanticTags": ["platform", "vehicle", "hardware"],
+      "category": "hardware"
+    },
+    {
+      "id": "nmea-protocol",
+      "type": "concept",
+      "labels": {
+        "en": "NMEA Protocol",
+        "fi": "NMEA-protokolla"
+      },
+      "descriptions": {
+        "en": "NMEA 0183 communication standard for marine electronics, enabling data exchange between fishfinder, GPS, and logging devices via serial connection.",
+        "fi": "NMEA 0183 -tiedonsiirtostandardi merielektroniikalle, joka mahdollistaa datan vaihdon kaikuluotaimen, GPS:n ja tallennuslaitteiden välillä sarjaliitännän kautta."
+      },
+      "aliases": {
+        "en": ["NMEA 0183", "National Marine Electronics Association"],
+        "fi": ["NMEA 0183"]
+      },
+      "semanticTags": ["protocol", "data-format", "serial-communication", "marine-electronics"],
+      "category": "protocols"
+    },
+    {
+      "id": "bathymetry",
+      "type": "concept",
+      "labels": {
+        "en": "Bathymetry",
+        "fi": "Syvyyskartoitus"
+      },
+      "descriptions": {
+        "en": "The study and mapping of underwater terrain and water depths. In this project, bathymetric data is collected using consumer sonar equipment.",
+        "fi": "Vedenalaisen maaston ja syvyyksien tutkimus ja kartoitus. Tässä projektissa batymetristä dataa kerätään kuluttajatason kaikuluotainlaitteilla."
+      },
+      "aliases": {
+        "en": ["depth mapping", "underwater topography"],
+        "fi": ["syvyyskartta", "pohjakartoitus"]
+      },
+      "semanticTags": ["measurement", "mapping", "data-collection"],
+      "category": "concepts"
+    },
+    {
+      "id": "fishfinder",
+      "type": "concept",
+      "labels": {
+        "en": "Fishfinder",
+        "fi": "Kaikuluotain"
+      },
+      "descriptions": {
+        "en": "Consumer sonar device that measures water depth and detects underwater objects. Used unmodified in this project as the primary depth sensor.",
+        "fi": "Kuluttajatason kaikuluotainlaite, joka mittaa vesisyvyyttä ja havaitsee vedenalaisia kohteita. Käytetään tässä projektissa muokkaamattomana ensisijaisena syvyysanturina."
+      },
+      "aliases": {
+        "en": ["sonar", "echo sounder", "depth sounder"],
+        "fi": ["kaiku", "syvyysmittari"]
+      },
+      "semanticTags": ["sensor", "sonar", "hardware", "depth-measurement"],
+      "category": "hardware"
+    },
+    {
+      "id": "gps",
+      "type": "concept",
+      "labels": {
+        "en": "GPS Positioning",
+        "fi": "GPS-paikannus"
+      },
+      "descriptions": {
+        "en": "Global Positioning System used to record geographic coordinates for each depth measurement, enabling accurate mapping.",
+        "fi": "Maailmanlaajuinen paikannusjärjestelmä, jota käytetään maantieteellisten koordinaattien tallentamiseen jokaiselle syvyysmittaukselle tarkan kartoituksen mahdollistamiseksi."
+      },
+      "aliases": {
+        "en": ["Global Positioning System", "GNSS", "satellite positioning"],
+        "fi": ["satelliittipaikannus", "GNSS"]
+      },
+      "semanticTags": ["positioning", "navigation", "coordinates"],
+      "category": "hardware"
+    },
+    {
+      "id": "hull-design",
+      "type": "concept",
+      "labels": {
+        "en": "Hull Design",
+        "fi": "Rungon suunnittelu"
+      },
+      "descriptions": {
+        "en": "The design and selection of the boat hull, considering stability, payload capacity, and suitability for calm inland lake conditions.",
+        "fi": "Veneen rungon suunnittelu ja valinta, huomioiden vakaus, kantokyky ja soveltuvuus tyynille sisävesiolosuhteille."
+      },
+      "semanticTags": ["design", "platform", "stability"],
+      "category": "hardware"
+    },
+    {
+      "id": "transducer",
+      "type": "concept",
+      "labels": {
+        "en": "Transducer",
+        "fi": "Anturi"
+      },
+      "descriptions": {
+        "en": "The underwater sensor component of a fishfinder that emits and receives sonar signals to measure depth.",
+        "fi": "Kaikuluotaimen vedenalainen anturikomponentti, joka lähettää ja vastaanottaa kaikuaaltoja syvyyden mittaamiseksi."
+      },
+      "aliases": {
+        "en": ["sonar transducer", "depth transducer"],
+        "fi": ["kaikuanturi", "syvyysanturi"]
+      },
+      "semanticTags": ["sensor", "sonar", "hardware"],
+      "category": "hardware"
+    },
+    {
+      "id": "data-logging",
+      "type": "concept",
+      "labels": {
+        "en": "Data Logging",
+        "fi": "Datan tallennus"
+      },
+      "descriptions": {
+        "en": "The process of recording NMEA sentences containing depth and position data for later processing and map generation.",
+        "fi": "NMEA-lauseiden tallennus, jotka sisältävät syvyys- ja sijaintidataa myöhempää käsittelyä ja kartan luontia varten."
+      },
+      "semanticTags": ["data-collection", "storage", "processing"],
+      "category": "software"
+    },
+    {
+      "id": "inland-lakes",
+      "type": "concept",
+      "labels": {
+        "en": "Inland Lakes",
+        "fi": "Sisävedet"
+      },
+      "descriptions": {
+        "en": "The target environment for this project: calm freshwater lakes suitable for small USV operations, as opposed to marine/ocean conditions.",
+        "fi": "Projektin kohdealue: tyynet makean veden järvet, jotka soveltuvat pienille USV-operaatioille, vastakohtana meri-/valtameriolosuhteille."
+      },
+      "semanticTags": ["environment", "conditions", "target-area"],
+      "category": "concepts"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc:getting-started",
+      "type": "document",
+      "slug": "getting-started",
+      "labels": {
+        "en": "Getting Started",
+        "fi": "Aloitus"
+      },
+      "descriptions": {
+        "en": "Introduction to the DIY lake mapping project, providing an overview of the required hardware, skills, and project scope.",
+        "fi": "Johdanto DIY-järvikartoitusprojektiin, joka antaa yleiskuvan tarvittavista laitteista, taidoista ja projektin laajuudesta."
+      },
+      "file": {
+        "en": "docs/getting-started.en.md",
+        "fi": "docs/getting-started.fi.md"
+      },
+      "category": "overview"
+    },
+    {
+      "id": "doc:hardware/hull",
+      "type": "document",
+      "slug": "hardware/hull",
+      "labels": {
+        "en": "Hull Selection",
+        "fi": "Rungon valinta"
+      },
+      "descriptions": {
+        "en": "Guide to selecting and preparing a suitable hull for the USV platform, including stability and mounting considerations.",
+        "fi": "Opas sopivan rungon valintaan ja valmisteluun USV-alustalle, mukaan lukien vakaus- ja asennusnäkökohdat."
+      },
+      "file": {
+        "en": "docs/hardware/hull.en.md",
+        "fi": "docs/hardware/hull.fi.md"
+      },
+      "category": "hardware"
+    },
+    {
+      "id": "doc:software/nmea",
+      "type": "document",
+      "slug": "software/nmea",
+      "labels": {
+        "en": "NMEA Protocol",
+        "fi": "NMEA-protokolla"
+      },
+      "descriptions": {
+        "en": "Technical reference for NMEA 0183 sentences used in depth and position data capture, including sentence formats and parsing.",
+        "fi": "Tekninen dokumentaatio NMEA 0183 -lauseista syvyys- ja sijaintidatan tallennukseen, mukaan lukien lausemuodot ja jäsennys."
+      },
+      "file": {
+        "en": "docs/software/nmea.en.md",
+        "fi": "docs/software/nmea.fi.md"
+      },
+      "category": "software"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "doc:getting-started",
+      "target": "doc:hardware/hull",
+      "type": "references",
+      "labels": {
+        "en": "references",
+        "fi": "viittaa"
+      }
+    },
+    {
+      "id": "e2",
+      "source": "doc:getting-started",
+      "target": "doc:software/nmea",
+      "type": "references",
+      "labels": {
+        "en": "references",
+        "fi": "viittaa"
+      }
+    },
+    {
+      "id": "e3",
+      "source": "doc:getting-started",
+      "target": "doc:hardware/hull",
+      "type": "prerequisite",
+      "labels": {
+        "en": "read before",
+        "fi": "lue ennen"
+      }
+    },
+    {
+      "id": "e4",
+      "source": "doc:hardware/hull",
+      "target": "hull-design",
+      "type": "covers",
+      "labels": {
+        "en": "covers",
+        "fi": "käsittelee"
+      }
+    },
+    {
+      "id": "e5",
+      "source": "doc:hardware/hull",
+      "target": "usv",
+      "type": "covers",
+      "labels": {
+        "en": "covers",
+        "fi": "käsittelee"
+      }
+    },
+    {
+      "id": "e6",
+      "source": "doc:software/nmea",
+      "target": "nmea-protocol",
+      "type": "covers",
+      "labels": {
+        "en": "covers",
+        "fi": "käsittelee"
+      }
+    },
+    {
+      "id": "e7",
+      "source": "doc:software/nmea",
+      "target": "data-logging",
+      "type": "covers",
+      "labels": {
+        "en": "covers",
+        "fi": "käsittelee"
+      }
+    },
+    {
+      "id": "e8",
+      "source": "doc:getting-started",
+      "target": "bathymetry",
+      "type": "covers",
+      "labels": {
+        "en": "covers",
+        "fi": "käsittelee"
+      }
+    },
+    {
+      "id": "e9",
+      "source": "doc:getting-started",
+      "target": "usv",
+      "type": "covers",
+      "labels": {
+        "en": "covers",
+        "fi": "käsittelee"
+      }
+    },
+    {
+      "id": "e10",
+      "source": "usv",
+      "target": "hull-design",
+      "type": "conceptual",
+      "labels": {
+        "en": "includes",
+        "fi": "sisältää"
+      }
+    },
+    {
+      "id": "e11",
+      "source": "fishfinder",
+      "target": "transducer",
+      "type": "conceptual",
+      "labels": {
+        "en": "includes",
+        "fi": "sisältää"
+      }
+    },
+    {
+      "id": "e12",
+      "source": "fishfinder",
+      "target": "nmea-protocol",
+      "type": "conceptual",
+      "labels": {
+        "en": "outputs via",
+        "fi": "tuottaa dataa"
+      }
+    },
+    {
+      "id": "e13",
+      "source": "nmea-protocol",
+      "target": "data-logging",
+      "type": "conceptual",
+      "labels": {
+        "en": "enables",
+        "fi": "mahdollistaa"
+      }
+    },
+    {
+      "id": "e14",
+      "source": "gps",
+      "target": "nmea-protocol",
+      "type": "conceptual",
+      "labels": {
+        "en": "outputs via",
+        "fi": "tuottaa dataa"
+      }
+    },
+    {
+      "id": "e15",
+      "source": "bathymetry",
+      "target": "fishfinder",
+      "type": "conceptual",
+      "labels": {
+        "en": "requires",
+        "fi": "vaatii"
+      }
+    },
+    {
+      "id": "e16",
+      "source": "bathymetry",
+      "target": "gps",
+      "type": "conceptual",
+      "labels": {
+        "en": "requires",
+        "fi": "vaatii"
+      }
+    },
+    {
+      "id": "e17",
+      "source": "usv",
+      "target": "inland-lakes",
+      "type": "conceptual",
+      "labels": {
+        "en": "operates in",
+        "fi": "toimii alueella"
+      }
+    },
+    {
+      "id": "e18",
+      "source": "fishfinder",
+      "target": "bathymetry",
+      "type": "conceptual",
+      "labels": {
+        "en": "measures for",
+        "fi": "mittaa"
+      }
+    }
+  ],
+  "categories": {
+    "overview": {
+      "labels": {
+        "en": "Overview",
+        "fi": "Yleiskatsaus"
+      },
+      "color": "#0F4C5C"
+    },
+    "hardware": {
+      "labels": {
+        "en": "Hardware",
+        "fi": "Laitteisto"
+      },
+      "color": "#1B6B7A"
+    },
+    "software": {
+      "labels": {
+        "en": "Software",
+        "fi": "Ohjelmisto"
+      },
+      "color": "#2A8F9C"
+    },
+    "protocols": {
+      "labels": {
+        "en": "Protocols",
+        "fi": "Protokollat"
+      },
+      "color": "#5BC0BE"
+    },
+    "concepts": {
+      "labels": {
+        "en": "Concepts",
+        "fi": "Käsitteet"
+      },
+      "color": "#D97706"
+    }
+  },
+  "edgeTypes": {
+    "hierarchical": {
+      "labels": {
+        "en": "Parent/Child",
+        "fi": "Ylä/Ala"
+      },
+      "style": "solid",
+      "directed": true
+    },
+    "references": {
+      "labels": {
+        "en": "References",
+        "fi": "Viittaukset"
+      },
+      "style": "dashed",
+      "directed": true
+    },
+    "prerequisite": {
+      "labels": {
+        "en": "Prerequisite",
+        "fi": "Edellytys"
+      },
+      "style": "solid",
+      "directed": true
+    },
+    "covers": {
+      "labels": {
+        "en": "Covers",
+        "fi": "Käsittelee"
+      },
+      "style": "dotted",
+      "directed": true
+    },
+    "conceptual": {
+      "labels": {
+        "en": "Related",
+        "fi": "Liittyy"
+      },
+      "style": "dashed",
+      "directed": false
+    }
+  }
+}

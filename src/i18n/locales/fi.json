@@ -2,7 +2,8 @@
   "nav": {
     "home": "Etusivu",
     "blog": "Projektiloki",
-    "docs": "Dokumentaatio"
+    "docs": "Dokumentaatio",
+    "graph": "Tietograafi"
   },
   "common": {
     "readMore": "Lue lisää",
@@ -48,5 +49,30 @@
     "tableOfContents": "Sisältö",
     "onThisPage": "Tällä sivulla",
     "gettingStarted": "Aloitus"
+  },
+  "graph": {
+    "title": "Tietograafi",
+    "subtitle": "Visuaalinen kartta projektin käsitteistä ja dokumentaatiosta",
+    "searchPlaceholder": "Etsi solmuja...",
+    "filters": "Suodattimet",
+    "clearFilters": "Tyhjennä kaikki",
+    "nodeTypes": "Solmutyypit",
+    "edgeTypes": "Suhteiden tyypit",
+    "categories": "Kategoriat",
+    "documents": "Dokumentit",
+    "concepts": "Käsitteet",
+    "document": "Dokumentti",
+    "concept": "Käsite",
+    "legend": "Selite",
+    "zoomIn": "Lähennä",
+    "zoomOut": "Loitonna",
+    "resetView": "Palauta näkymä",
+    "toggleLabels": "Näytä/piilota nimet",
+    "openDoc": "Avaa dokumentaatio",
+    "connectedNodes": "Yhdistetyt solmut",
+    "noResults": "Ei tuloksia",
+    "clickToOpen": "Klikkaa nähdäksesi tiedot",
+    "close": "Sulje",
+    "error": "Tietograafin lataus epäonnistui"
   }
 }
