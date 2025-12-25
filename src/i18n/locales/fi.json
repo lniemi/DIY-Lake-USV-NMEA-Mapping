@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Etusivu",
+    "blog": "Blogi",
+    "docs": "Dokumentaatio"
+  },
+  "common": {
+    "readMore": "Lue lisää",
+    "backToBlog": "Takaisin blogiin",
+    "backToDocs": "Takaisin dokumentaatioon",
+    "loading": "Ladataan...",
+    "notFound": "Sivua ei löydy",
+    "notFoundDesc": "Etsimääsi sivua ei ole olemassa.",
+    "goHome": "Siirry etusivulle",
+    "switchLanguage": "In English",
+    "postedOn": "Julkaistu",
+    "minuteRead": "min lukuaika"
+  },
+  "home": {
+    "title": "Tee-se-itse järvikartoitus",
+    "subtitle": "Kartoita tänään. Irrota ja kalasta huomenna.",
+    "description": "Tee-se-itse projekti järvien syvyyskartoitukseen miehittämättömällä pinta-aluksella ja tavallisella NMEA-yhteensopivalla kaikuluotaimella.",
+    "getStarted": "Aloita tästä",
+    "readBlog": "Lue blogia",
+    "features": {
+      "title": "Miksi tämä projekti?",
+      "reusable": {
+        "title": "Uudelleenkäytettävät laitteet",
+        "desc": "Käytä olemassa olevaa kaikuluotainta. Ei pysyviä muutoksia."
+      },
+      "open": {
+        "title": "Avoin ja dokumentoitu",
+        "desc": "Täysi dokumentaatio laitteistosta tietojenkäsittelyyn."
+      },
+      "nmea": {
+        "title": "NMEA-yhteensopiva",
+        "desc": "Vakioprotokollat mahdollistavat laitevalmistajasta riippumattoman integraation."
+      }
+    }
+  },
+  "blog": {
+    "title": "Projektiblogi",
+    "subtitle": "Päivityksiä, ajatuksia ja edistymistä järvikartoitusprojektissa",
+    "noPosts": "Ei vielä julkaisuja. Tarkista pian uudelleen!"
+  },
+  "docs": {
+    "title": "Dokumentaatio",
+    "subtitle": "Kaikki mitä tarvitset oman järvikartoitusaluksen rakentamiseen",
+    "tableOfContents": "Sisällysluettelo",
+    "onThisPage": "Tällä sivulla",
+    "gettingStarted": "Aloitus"
+  }
+}

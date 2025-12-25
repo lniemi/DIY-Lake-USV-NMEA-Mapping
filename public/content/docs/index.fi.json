@@ -1,0 +1,31 @@
+{
+  "sections": [
+    {
+      "title": "Aloitus",
+      "slug": "getting-started",
+      "file": "docs/getting-started.fi.md"
+    },
+    {
+      "title": "Laitteisto",
+      "slug": "hardware",
+      "children": [
+        {
+          "title": "Rungon valinta",
+          "slug": "hardware/hull",
+          "file": "docs/hardware/hull.fi.md"
+        }
+      ]
+    },
+    {
+      "title": "Ohjelmisto",
+      "slug": "software",
+      "children": [
+        {
+          "title": "NMEA-protokolla",
+          "slug": "software/nmea",
+          "file": "docs/software/nmea.fi.md"
+        }
+      ]
+    }
+  ]
+}

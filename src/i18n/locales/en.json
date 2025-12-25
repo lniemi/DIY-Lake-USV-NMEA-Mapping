@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "docs": "Documentation"
+  },
+  "common": {
+    "readMore": "Read more",
+    "backToBlog": "Back to blog",
+    "backToDocs": "Back to documentation",
+    "loading": "Loading...",
+    "notFound": "Page not found",
+    "notFoundDesc": "The page you're looking for doesn't exist.",
+    "goHome": "Go to home page",
+    "switchLanguage": "Suomeksi",
+    "postedOn": "Posted on",
+    "minuteRead": "min read"
+  },
+  "home": {
+    "title": "DIY Lake USV Mapping",
+    "subtitle": "Map today. Unplug and fish tomorrow.",
+    "description": "A do-it-yourself project for mapping lake depths using an unmanned surface vehicle and existing NMEA-compatible fishfinder equipment.",
+    "getStarted": "Get Started",
+    "readBlog": "Read the Blog",
+    "features": {
+      "title": "Why This Project?",
+      "reusable": {
+        "title": "Reusable Equipment",
+        "desc": "Use your existing fishfinder. No permanent modifications needed."
+      },
+      "open": {
+        "title": "Open & Documented",
+        "desc": "Full documentation, from hardware builds to data processing."
+      },
+      "nmea": {
+        "title": "NMEA Compatible",
+        "desc": "Standard protocols mean vendor-agnostic integration."
+      }
+    }
+  },
+  "blog": {
+    "title": "Project Blog",
+    "subtitle": "Updates, thoughts, and progress on the lake mapping project",
+    "noPosts": "No posts yet. Check back soon!"
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "Everything you need to build your own lake mapping USV",
+    "tableOfContents": "Table of Contents",
+    "onThisPage": "On this page",
+    "gettingStarted": "Getting Started"
+  }
+}

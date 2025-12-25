@@ -1,0 +1,31 @@
+{
+  "sections": [
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "file": "docs/getting-started.en.md"
+    },
+    {
+      "title": "Hardware",
+      "slug": "hardware",
+      "children": [
+        {
+          "title": "Hull Selection",
+          "slug": "hardware/hull",
+          "file": "docs/hardware/hull.en.md"
+        }
+      ]
+    },
+    {
+      "title": "Software",
+      "slug": "software",
+      "children": [
+        {
+          "title": "NMEA Protocol",
+          "slug": "software/nmea",
+          "file": "docs/software/nmea.en.md"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "slug": "project-kickoff",
+      "title": "Projektin aloitus: Järvikartoitusaluksen rakentaminen",
+      "date": "2025-01-01",
+      "excerpt": "Tervetuloa DIY-järvikartoitusprojektiin! Tämä on matkamme alku kohti avoimen lähdekoodin ratkaisua järvien syvyyskartoitukseen tavallisella kaikuluotainlaitteistolla.",
+      "file": "blog/2025-01-01-project-kickoff.fi.md",
+      "tags": ["ilmoitus", "suunnittelu"],
+      "readingTime": 3
+    }
+  ]
+}

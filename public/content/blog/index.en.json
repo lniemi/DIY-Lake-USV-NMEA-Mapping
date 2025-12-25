@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "slug": "project-kickoff",
+      "title": "Project Kickoff: Building a Lake Mapping USV",
+      "date": "2025-01-01",
+      "excerpt": "Welcome to the DIY Lake USV Mapping project! This is the beginning of our journey to create an open-source solution for mapping lake depths using consumer fishfinder equipment.",
+      "file": "blog/2025-01-01-project-kickoff.en.md",
+      "tags": ["announcement", "planning"],
+      "readingTime": 3
+    }
+  ]
+}
