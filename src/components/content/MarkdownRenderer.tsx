@@ -12,7 +12,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
   const cleanContent = content.replace(/^---[\s\S]*?---\n/, '');
 
   return (
-    <div className="prose prose-slate max-w-none prose-headings:scroll-mt-20 prose-a:text-blue-600 prose-img:rounded-lg">
+    <div className="prose prose-slate max-w-none prose-headings:scroll-mt-20 prose-headings:text-paper-900 prose-p:text-paper-700 prose-a:text-lake-700 prose-a:underline-offset-2 prose-strong:text-paper-900 prose-img:rounded-md prose-img:shadow-md prose-blockquote:border-lake-400 prose-blockquote:bg-lake-50/50 prose-blockquote:rounded-r-md prose-code:bg-lake-50 prose-code:text-lake-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-sm prose-code:before:content-none prose-code:after:content-none">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{

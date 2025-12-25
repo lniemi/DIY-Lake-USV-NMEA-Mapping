@@ -14,7 +14,7 @@ export function BlogList({ posts }: BlogListProps) {
 
   if (posts.length === 0) {
     return (
-      <p className="text-slate-600 text-center py-12">
+      <p className="text-paper-600 text-center py-12">
         {t('blog.noPosts')}
       </p>
     );
@@ -25,14 +25,14 @@ export function BlogList({ posts }: BlogListProps) {
       {posts.map(post => (
         <article
           key={post.slug}
-          className="bg-white rounded-lg border border-slate-200 p-6 hover:border-blue-300 transition-colors"
+          className="card"
         >
           <Link to={`/${locale}/${blogPath}/${post.slug}`}>
-            <h2 className="text-xl font-semibold text-slate-800 hover:text-blue-600 transition-colors mb-2">
+            <h2 className="text-xl font-semibold text-paper-900 hover:text-lake-700 transition-colors mb-2">
               {post.title}
             </h2>
           </Link>
-          <div className="flex items-center gap-4 text-sm text-slate-500 mb-3">
+          <div className="flex items-center gap-4 text-sm text-paper-500 mb-3">
             <time dateTime={post.date}>
               {t('common.postedOn')} {new Date(post.date).toLocaleDateString(locale === 'fi' ? 'fi-FI' : 'en-US', {
                 year: 'numeric',
@@ -44,14 +44,11 @@ export function BlogList({ posts }: BlogListProps) {
               <span>{post.readingTime} {t('common.minuteRead')}</span>
             )}
           </div>
-          <p className="text-slate-600 mb-4">{post.excerpt}</p>
+          <p className="text-paper-600 mb-4">{post.excerpt}</p>
           {post.tags && post.tags.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {post.tags.map(tag => (
-                <span
-                  key={tag}
-                  className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded"
-                >
+                <span key={tag} className="tag">
                   {tag}
                 </span>
               ))}

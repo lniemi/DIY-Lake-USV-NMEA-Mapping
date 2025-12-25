@@ -17,13 +17,13 @@ export function DocPage({ title, content }: DocPageProps) {
     <article>
       <Link
         to={`/${locale}/${docsPath}`}
-        className="text-blue-600 hover:text-blue-700 text-sm mb-6 inline-block md:hidden"
+        className="text-lake-700 hover:text-lake-800 text-sm mb-6 inline-block md:hidden"
       >
         &larr; {t('common.backToDocs')}
       </Link>
 
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-800">
+        <h1 className="text-3xl font-bold text-paper-900">
           {title}
         </h1>
       </header>

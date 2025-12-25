@@ -11,15 +11,15 @@ export function Home() {
   return (
     <div>
       {/* Hero section */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-16 md:py-24">
+      <section className="bg-gradient-to-b from-lake-100 to-paper-50 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-paper-900 mb-4">
             {t('home.title')}
           </h1>
-          <p className="text-xl text-blue-600 font-medium mb-6">
+          <p className="text-xl text-lake-700 font-medium mb-6">
             {t('home.subtitle')}
           </p>
-          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-paper-600 mb-8 max-w-2xl mx-auto">
             {t('home.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -36,7 +36,7 @@ export function Home() {
       {/* Features section */}
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-800 text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-paper-900 text-center mb-12">
             {t('home.features.title')}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -82,10 +82,10 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="bg-white rounded-lg border border-slate-200 p-6">
-      <div className="text-blue-600 mb-4">{icon}</div>
-      <h3 className="text-lg font-semibold text-slate-800 mb-2">{title}</h3>
-      <p className="text-slate-600">{description}</p>
+    <div className="card">
+      <div className="text-lake-500 mb-4">{icon}</div>
+      <h3 className="text-lg font-semibold text-paper-900 mb-2">{title}</h3>
+      <p className="text-paper-600">{description}</p>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export function LanguageSwitcher() {
   return (
     <button
       onClick={switchLocale}
-      className="text-sm text-slate-600 hover:text-blue-600 transition-colors font-medium"
+      className="text-sm text-paper-600 hover:text-lake-700 transition-colors font-medium"
     >
       {t('common.switchLanguage')}
     </button>
