@@ -1,52 +1,51 @@
 {
   "nav": {
     "home": "Etusivu",
-    "blog": "Blogi",
+    "blog": "Projektiloki",
     "docs": "Dokumentaatio"
   },
   "common": {
     "readMore": "Lue lisää",
-    "backToBlog": "Takaisin blogiin",
+    "backToBlog": "Takaisin lokiin",
     "backToDocs": "Takaisin dokumentaatioon",
     "loading": "Ladataan...",
     "notFound": "Sivua ei löydy",
-    "notFoundDesc": "Etsimääsi sivua ei ole olemassa.",
-    "goHome": "Siirry etusivulle",
+    "notFoundDesc": "Pyydettyä sivua ei ole olemassa.",
+    "goHome": "Palaa etusivulle",
     "switchLanguage": "In English",
-    "postedOn": "Julkaistu",
+    "postedOn": "",
     "minuteRead": "min lukuaika"
   },
   "home": {
-    "title": "Tee-se-itse järvikartoitus",
-    "subtitle": "Kartoita tänään. Irrota ja kalasta huomenna.",
-    "description": "Tee-se-itse projekti järvien syvyyskartoitukseen miehittämättömällä pinta-aluksella ja tavallisella NMEA-yhteensopivalla kaikuluotaimella.",
-    "getStarted": "Aloita tästä",
-    "readBlog": "Lue blogia",
-    "features": {
-      "title": "Miksi tämä projekti?",
-      "reusable": {
-        "title": "Uudelleenkäytettävät laitteet",
-        "desc": "Käytä olemassa olevaa kaikuluotainta. Ei pysyviä muutoksia."
+    "title": "Tee-se-itse järven syvyyskartoitus",
+    "description": "Tämä projekti dokumentoi miehittämättömän pinta-aluksen kehitystä sisävesien syvyyskartoitukseen kuluttajakäyttöisellä kaikuluotaimella ja NMEA 0183 -protokollalla.",
+    "viewDocs": "Dokumentaatio",
+    "viewLog": "Projektiloki",
+    "scope": {
+      "title": "Projektin laajuus",
+      "hardware": {
+        "title": "Laitteisto",
+        "desc": "USV-alusta irrotettavalla kaikuluotaimen kiinnityksellä. Kuluttajasonar liittyy NMEA 0183:lla."
       },
-      "open": {
-        "title": "Avoin ja dokumentoitu",
-        "desc": "Täysi dokumentaatio laitteistosta tietojenkäsittelyyn."
+      "data": {
+        "title": "Tiedonkeruu",
+        "desc": "GPS-paikannetut syvyysmittaukset tallentuvat jälkikäsittelyä varten syvyyskarttoihin."
       },
-      "nmea": {
-        "title": "NMEA-yhteensopiva",
-        "desc": "Vakioprotokollat mahdollistavat laitevalmistajasta riippumattoman integraation."
+      "methods": {
+        "title": "Menetelmät",
+        "desc": "Avoin dokumentaatio rakennusprosessista, kalibroinnista ja data-analyysistä."
       }
     }
   },
   "blog": {
-    "title": "Projektiblogi",
-    "subtitle": "Päivityksiä, ajatuksia ja edistymistä järvikartoitusprojektissa",
-    "noPosts": "Ei vielä julkaisuja. Tarkista pian uudelleen!"
+    "title": "Projektiloki",
+    "subtitle": "Rakennusmuistiinpanot, testitulokset ja havainnot",
+    "noPosts": "Ei vielä merkintöjä."
   },
   "docs": {
     "title": "Dokumentaatio",
-    "subtitle": "Kaikki mitä tarvitset oman järvikartoitusaluksen rakentamiseen",
-    "tableOfContents": "Sisällysluettelo",
+    "subtitle": "Tekninen viitedokumentaatio syvyyskartoitus-USV-järjestelmälle",
+    "tableOfContents": "Sisältö",
     "onThisPage": "Tällä sivulla",
     "gettingStarted": "Aloitus"
   }

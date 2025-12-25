@@ -65,6 +65,52 @@ The `useLocale` hook handles language switching while preserving the current pag
 - **Target Environment**: Calm inland lakes (not marine/ocean conditions)
 - **Hardware Philosophy**: Fishfinder remains unmodified; removable mounting
 
+## Writing Tone & Content Style
+
+This is an **academic hobby project**, not a product. All content must reflect this.
+
+### Core Principles
+
+- **Informative, not persuasive** - Report findings and document methods; never sell or hype
+- **Matter-of-fact, almost dry** - Academic tone; it's acceptable to sound slightly dull
+- **Document what exists** - No promises about what users will "get" or "achieve"
+- **DIY spirit** - Consumer hardware, practical methods, real constraints
+
+### Prohibited Patterns
+
+| Type | Examples to Avoid |
+|------|-------------------|
+| Taglines/slogans | "Map today. Unplug and fish tomorrow." |
+| CTAs | "Get Started", "Try Now", "Launch Your..." |
+| Benefit selling | "Why This Project?", feature cards with benefits |
+| Marketing promises | "Everything you need to...", "The ultimate..." |
+| Hype words | "Revolutionary", "game-changing", "seamless" |
+| Product framing | Treating documentation as a product page |
+
+### Correct Patterns
+
+| Type | Examples |
+|------|----------|
+| Project description | "This project documents the development of..." |
+| Navigation | "Documentation", "Project Log" (not "Get Started", "Read the Blog") |
+| Section headers | "Project Scope", "Methods", "Hardware" |
+| Descriptions | "USV platform with removable fishfinder mount. Consumer sonar unit connects via NMEA 0183." |
+
+### Blog = Project Log
+
+The blog functions as a **project log**, not a marketing blog:
+- Build notes and observations
+- Test results and measurements
+- Problems encountered and solutions
+- Technical decisions and rationale
+
+### Documentation = Technical Reference
+
+Documentation is **technical reference**, not onboarding:
+- How systems work, not why you should use them
+- Specifications and procedures
+- Calibration methods and data formats
+
 ## UI/UX Design Standards
 
 When generating or modifying UI components, follow these rules to ensure professional, intentional design. Avoid "vibe coded" patterns that signal rushed, unpolished work.

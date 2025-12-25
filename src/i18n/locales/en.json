@@ -1,52 +1,51 @@
 {
   "nav": {
     "home": "Home",
-    "blog": "Blog",
+    "blog": "Project Log",
     "docs": "Documentation"
   },
   "common": {
     "readMore": "Read more",
-    "backToBlog": "Back to blog",
+    "backToBlog": "Back to log",
     "backToDocs": "Back to documentation",
     "loading": "Loading...",
     "notFound": "Page not found",
-    "notFoundDesc": "The page you're looking for doesn't exist.",
-    "goHome": "Go to home page",
+    "notFoundDesc": "The requested page does not exist.",
+    "goHome": "Return to home",
     "switchLanguage": "Suomeksi",
-    "postedOn": "Posted on",
+    "postedOn": "",
     "minuteRead": "min read"
   },
   "home": {
-    "title": "DIY Lake USV Mapping",
-    "subtitle": "Map today. Unplug and fish tomorrow.",
-    "description": "A do-it-yourself project for mapping lake depths using an unmanned surface vehicle and existing NMEA-compatible fishfinder equipment.",
-    "getStarted": "Get Started",
-    "readBlog": "Read the Blog",
-    "features": {
-      "title": "Why This Project?",
-      "reusable": {
-        "title": "Reusable Equipment",
-        "desc": "Use your existing fishfinder. No permanent modifications needed."
+    "title": "DIY Lake Bathymetry Mapping",
+    "description": "This project documents the development of an unmanned surface vehicle for inland lake depth mapping using consumer fishfinder hardware and NMEA 0183 protocol.",
+    "viewDocs": "Documentation",
+    "viewLog": "Project Log",
+    "scope": {
+      "title": "Project Scope",
+      "hardware": {
+        "title": "Hardware",
+        "desc": "USV platform with removable fishfinder mount. Consumer sonar unit connects via NMEA 0183."
       },
-      "open": {
-        "title": "Open & Documented",
-        "desc": "Full documentation, from hardware builds to data processing."
+      "data": {
+        "title": "Data Collection",
+        "desc": "GPS-tagged depth readings logged for post-processing into bathymetric maps."
       },
-      "nmea": {
-        "title": "NMEA Compatible",
-        "desc": "Standard protocols mean vendor-agnostic integration."
+      "methods": {
+        "title": "Methods",
+        "desc": "Open documentation of build process, calibration procedures, and data analysis."
       }
     }
   },
   "blog": {
-    "title": "Project Blog",
-    "subtitle": "Updates, thoughts, and progress on the lake mapping project",
-    "noPosts": "No posts yet. Check back soon!"
+    "title": "Project Log",
+    "subtitle": "Build notes, test results, and observations",
+    "noPosts": "No entries yet."
   },
   "docs": {
     "title": "Documentation",
-    "subtitle": "Everything you need to build your own lake mapping USV",
-    "tableOfContents": "Table of Contents",
+    "subtitle": "Technical reference for the bathymetry USV system",
+    "tableOfContents": "Contents",
     "onThisPage": "On this page",
     "gettingStarted": "Getting Started"
   }
