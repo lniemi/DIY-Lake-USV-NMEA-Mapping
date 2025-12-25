@@ -13,7 +13,6 @@ import { NodeTooltip } from './NodeTooltip';
 import { NodeDetail } from './NodeDetail';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import type { GraphNode } from '../../types/knowledge-graph';
-import type { ForceGraphMethods } from 'react-force-graph-2d';
 
 export function KnowledgeGraph() {
   const { t } = useTranslation();
@@ -35,7 +34,8 @@ export function KnowledgeGraph() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [showLabels, setShowLabels] = useState(true);
   const [showFilters, setShowFilters] = useState(false);
-  const graphRef = useRef<ForceGraphMethods>();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const graphRef = useRef<any>(null);
 
   // Track mouse position for tooltip
   useEffect(() => {

@@ -5,7 +5,6 @@ import type {
   GraphData,
   GraphNode,
   GraphLink,
-  getLocalized,
 } from '../types/knowledge-graph';
 
 export function useGraphTransform(

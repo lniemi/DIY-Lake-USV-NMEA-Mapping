@@ -1,5 +1,5 @@
-import { useRef, useCallback, useEffect, useState } from 'react';
-import ForceGraph2D, { ForceGraphMethods } from 'react-force-graph-2d';
+import { useCallback, useEffect, useState, useRef } from 'react';
+import ForceGraph2D from 'react-force-graph-2d';
 import type { GraphData, GraphNode, GraphLink } from '../../types/knowledge-graph';
 import { getConnectedNodeIds } from '../../hooks/useGraphTransform';
 
@@ -22,7 +22,8 @@ export function GraphCanvas({
   onBackgroundClick,
   showLabels,
 }: GraphCanvasProps) {
-  const graphRef = useRef<ForceGraphMethods>();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const graphRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
 
@@ -59,9 +60,6 @@ export function GraphCanvas({
       const baseSize = node.type === 'document' ? 8 : 6;
       const size = isSelected || isHovered ? baseSize * 1.3 : baseSize;
 
-      // Alpha for dimming
-      const alpha = isDimmed ? 0.2 : 1;
-
       // Draw node circle
       ctx.beginPath();
       ctx.arc(node.x!, node.y!, size, 0, 2 * Math.PI);
@@ -97,7 +95,7 @@ export function GraphCanvas({
 
   // Custom link rendering
   const paintLink = useCallback(
-    (link: GraphLink, ctx: CanvasRenderingContext2D, globalScale: number) => {
+    (link: GraphLink, ctx: CanvasRenderingContext2D) => {
       const source = link.source as GraphNode;
       const target = link.target as GraphNode;
 
@@ -176,8 +174,8 @@ export function GraphCanvas({
         width={dimensions.width}
         height={dimensions.height}
         graphData={data}
-        nodeCanvasObject={paintNode}
-        linkCanvasObject={paintLink}
+        nodeCanvasObject={paintNode as any}
+        linkCanvasObject={paintLink as any}
         onNodeClick={(node) => onNodeClick(node as GraphNode)}
         onNodeHover={(node) => onNodeHover(node as GraphNode | null)}
         onBackgroundClick={onBackgroundClick}
@@ -199,6 +197,3 @@ export function GraphCanvas({
     </div>
   );
 }
-
-// Expose methods via ref
-export type GraphCanvasRef = ForceGraphMethods;
