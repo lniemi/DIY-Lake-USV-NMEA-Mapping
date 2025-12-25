@@ -3,12 +3,18 @@ import type { Locale } from '../types';
 
 const BASE_URL = import.meta.env.BASE_URL;
 
-export function useContent(path: string, locale: Locale) {
+export function useContent(path: string | null, locale: Locale) {
   const [content, setContent] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
+    // Skip fetching if path is not yet available
+    if (path === null) {
+      setLoading(true);
+      return;
+    }
+
     const fetchContent = async () => {
       setLoading(true);
       setError(null);

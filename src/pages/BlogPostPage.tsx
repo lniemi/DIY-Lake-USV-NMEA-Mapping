@@ -14,8 +14,8 @@ export function BlogPostPage() {
   // Find the post metadata
   const postMeta = posts.find(p => p.slug === slug);
 
-  // Get the file path without extension and locale
-  const filePath = postMeta?.file?.replace(`.${locale}.md`, '') || `blog/${slug}`;
+  // Get the file path without extension and locale - only when postMeta is available
+  const filePath = postMeta?.file?.replace(`.${locale}.md`, '') ?? null;
   const { content, loading: contentLoading, error } = useContent(filePath, locale);
 
   if (postsLoading || contentLoading) {
