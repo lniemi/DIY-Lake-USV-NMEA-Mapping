@@ -29,4 +29,4 @@ Tulevissa julkaisuissa käsittelemme:
 - GPS-integraatio
 - Datan käsittely ja karttojen luominen
 
-Pysy kuulolla päivitysten varalta!
+Pysy kuulolla päivitysten varalta! Jeah!
