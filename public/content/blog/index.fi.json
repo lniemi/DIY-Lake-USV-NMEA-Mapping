@@ -1,6 +1,15 @@
 {
   "posts": [
     {
+      "slug": "sensor-approach-decision",
+      "title": "Anturilähestymistavan valinta: Kaupallinen kaikuluotain vai DIY-luotain",
+      "date": "2025-01-02",
+      "excerpt": "Dokumentointi päätöksestä käyttää Open Echo -projektia DIY-luotaimena kaupallisten kaikuluotainten sijaan. Käsittelee kompromisseja, laitteistovalintoja ja inspiraatiota liittyvistä töistä.",
+      "file": "blog/2025-01-02-sensor-approach-decision.fi.md",
+      "tags": ["laitteisto", "päätös", "open-echo"],
+      "readingTime": 6
+    },
+    {
       "slug": "project-kickoff",
       "title": "Projektin aloitus: Järvikartoitusaluksen rakentaminen",
       "date": "2025-01-01",
