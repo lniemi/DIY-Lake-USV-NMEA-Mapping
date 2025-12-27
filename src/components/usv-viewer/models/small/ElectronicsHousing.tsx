@@ -1,18 +1,19 @@
-import type { BatteryCompartmentConfig, MaterialConfig } from '../../../types/usv-config';
+import type { ElectronicsHousingConfig, MaterialConfig } from '../../../../types/usv-config';
 
-interface BatteryCompartmentProps {
-  config: BatteryCompartmentConfig;
+interface ElectronicsHousingProps {
+  config: ElectronicsHousingConfig;
   material: MaterialConfig;
   visible?: boolean;
 }
 
-export function BatteryCompartment({ config, material, visible = true }: BatteryCompartmentProps) {
+export function ElectronicsHousing({ config, material, visible = true }: ElectronicsHousingProps) {
   if (!visible) return null;
 
   const { length, width, height } = config;
 
+  // Position for small USV (0.65m hull) - on deck, mid-forward
   return (
-    <mesh position={[0, 0.1, -0.2]}>
+    <mesh position={[0, 0.06, 0.1]}>
       <boxGeometry args={[width, height, length]} />
       <meshStandardMaterial
         color={material.color}

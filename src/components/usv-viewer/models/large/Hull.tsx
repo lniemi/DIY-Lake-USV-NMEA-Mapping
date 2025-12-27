@@ -1,4 +1,4 @@
-import type { HullConfig, MaterialConfig } from '../../../types/usv-config';
+import type { HullConfig, MaterialConfig } from '../../../../types/usv-config';
 
 interface HullProps {
   config: HullConfig;

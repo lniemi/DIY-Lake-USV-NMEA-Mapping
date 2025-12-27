@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { Canvas, useThree, useFrame } from '@react-three/fiber';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { USVModel } from './models/USVModel';
+import { USVModelFactory } from './models/USVModelFactory';
 import { DimensionAnnotations } from './DimensionAnnotations';
 import type { USVConfig } from '../../types/usv-config';
 
@@ -11,6 +11,7 @@ interface ViewerCanvasProps {
   showGrid: boolean;
   showAxes: boolean;
   showMeasurements: boolean;
+  modelType: 'default' | 'small';
 }
 
 // Custom OrbitControls component (replaces drei)
@@ -63,6 +64,7 @@ function Scene({
   showGrid,
   showAxes,
   showMeasurements,
+  modelType,
 }: ViewerCanvasProps) {
   return (
     <>
@@ -81,7 +83,7 @@ function Scene({
       <AxesHelper visible={showAxes} />
 
       {/* USV Model */}
-      <USVModel config={config} visibility={componentVisibility} />
+      <USVModelFactory modelType={modelType} config={config} visibility={componentVisibility} />
 
       {/* Dimension annotations */}
       {showMeasurements && <DimensionAnnotations config={config} />}
@@ -95,6 +97,7 @@ export function ViewerCanvas({
   showGrid,
   showAxes,
   showMeasurements,
+  modelType,
 }: ViewerCanvasProps) {
   return (
     <div className="w-full h-full bg-paper-50 rounded-lg border border-paper-200 overflow-hidden">
@@ -109,6 +112,7 @@ export function ViewerCanvas({
           showGrid={showGrid}
           showAxes={showAxes}
           showMeasurements={showMeasurements}
+          modelType={modelType}
         />
       </Canvas>
     </div>

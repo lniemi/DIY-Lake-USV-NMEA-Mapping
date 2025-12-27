@@ -1,4 +1,4 @@
-import type { SensorBracketConfig, MaterialConfig } from '../../../types/usv-config';
+import type { SensorBracketConfig, MaterialConfig } from '../../../../types/usv-config';
 
 interface SensorBracketProps {
   config: SensorBracketConfig;

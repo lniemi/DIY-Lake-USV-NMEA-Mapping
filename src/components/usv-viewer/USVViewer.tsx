@@ -63,6 +63,7 @@ export function USVViewer() {
           showGrid={showGrid}
           showAxes={showAxes}
           showMeasurements={showMeasurements}
+          modelType={selectedModel as 'default' | 'small'}
         />
       </div>
     </div>

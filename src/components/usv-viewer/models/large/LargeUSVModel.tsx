@@ -4,14 +4,14 @@ import { SensorBracket } from './SensorBracket';
 import { ElectronicsHousing } from './ElectronicsHousing';
 import { BatteryCompartment } from './BatteryCompartment';
 import { GNSSModule } from './GNSSModule';
-import type { USVConfig } from '../../../types/usv-config';
+import type { USVConfig } from '../../../../types/usv-config';
 
-interface USVModelProps {
+interface LargeUSVModelProps {
   config: USVConfig;
   visibility: Record<string, boolean>;
 }
 
-export function USVModel({ config, visibility }: USVModelProps) {
+export function LargeUSVModel({ config, visibility }: LargeUSVModelProps) {
   return (
     <group>
       <Hull
@@ -44,7 +44,6 @@ export function USVModel({ config, visibility }: USVModelProps) {
           config={config.components.gnssModule}
           material={config.materials.electronics}
           visible={visibility.gnss}
-          hullLength={config.components.hull.length}
         />
       )}
     </group>

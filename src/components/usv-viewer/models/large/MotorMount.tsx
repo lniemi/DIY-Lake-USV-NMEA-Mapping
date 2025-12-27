@@ -1,4 +1,4 @@
-import type { MotorMountConfig, MaterialConfig } from '../../../types/usv-config';
+import type { MotorMountConfig, MaterialConfig } from '../../../../types/usv-config';
 
 interface MotorMountProps {
   config: MotorMountConfig;

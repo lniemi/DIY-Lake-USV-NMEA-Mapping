@@ -1,19 +1,18 @@
-import type { GNSSModuleConfig, MaterialConfig } from '../../../types/usv-config';
+import type { GNSSModuleConfig, MaterialConfig } from '../../../../types/usv-config';
 
 interface GNSSModuleProps {
   config: GNSSModuleConfig;
   material: MaterialConfig;
   visible?: boolean;
-  hullLength: number;
 }
 
-export function GNSSModule({ config, material, visible = true, hullLength }: GNSSModuleProps) {
+export function GNSSModule({ config, material, visible = true }: GNSSModuleProps) {
   if (!visible) return null;
 
   const { baseWidth, baseHeight, antennaDiameter, antennaHeight } = config;
 
-  // Position forward on deck, relative to hull length
-  const zPosition = hullLength * 0.25;
+  // Position for large USV (1.2m hull)
+  const zPosition = 0.3;
   const yBase = 0.08;
 
   return (

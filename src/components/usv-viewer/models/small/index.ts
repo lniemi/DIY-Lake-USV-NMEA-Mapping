@@ -1,0 +1,1 @@
+export { SmallUSVModel } from './SmallUSVModel';

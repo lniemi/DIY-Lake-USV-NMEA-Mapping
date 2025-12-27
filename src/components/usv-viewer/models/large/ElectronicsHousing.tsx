@@ -1,4 +1,4 @@
-import type { ElectronicsHousingConfig, MaterialConfig } from '../../../types/usv-config';
+import type { ElectronicsHousingConfig, MaterialConfig } from '../../../../types/usv-config';
 
 interface ElectronicsHousingProps {
   config: ElectronicsHousingConfig;
