@@ -27,6 +27,8 @@ The app uses path-based locale prefixes with localized route names:
 | `/en/blog/:slug` | `/fi/blogi/:slug` |
 | `/en/docs` | `/fi/dokumentaatio` |
 | `/en/docs/*` | `/fi/dokumentaatio/*` |
+| `/en/graph` | `/fi/tietograafi` |
+| `/en/viewer` | `/fi/katselin` |
 
 Root `/` auto-redirects based on browser language. Routing is configured in [src/App.tsx](src/App.tsx).
 
@@ -49,15 +51,39 @@ The `useLocale` hook handles language switching while preserving the current pag
 
 - `src/components/layout/` - Header, Footer, Layout with locale context
 - `src/components/content/` - MarkdownRenderer, BlogPost, DocNav
+- `src/components/usv-viewer/` - Three.js 3D viewer components
 - `src/pages/` - Page components (Home, Blog, Docs, etc.)
 - `public/content/blog/` - Blog posts and index files
 - `public/content/docs/` - Documentation pages and index files
+- `public/content/usv-configs/` - USV configuration JSON files for 3D viewer
 
 ### GitHub Pages Deployment
 
 - Deploys automatically on push to main via `.github/workflows/deploy.yml`
 - Uses `base: '/DIY-Lake-USV-NMEA-Mapping/'` in vite.config.ts
 - SPA routing handled by `public/404.html` redirect hack
+
+### 3D Viewer System
+
+The USV 3D Viewer (`/en/viewer` or `/fi/katselin`) is a parametric CAD-like viewer built with:
+- **Three.js** + **React Three Fiber** (no drei dependency)
+- Custom OrbitControls implementation
+- JSON-based configuration system
+
+**Key files:**
+- `src/components/usv-viewer/USVViewer.tsx` - Main container
+- `src/components/usv-viewer/ViewerCanvas.tsx` - Three.js canvas with custom controls
+- `src/components/usv-viewer/models/` - Parametric 3D components (Hull, MotorMount, etc.)
+- `src/components/usv-viewer/panels/` - UI control panels
+- `src/hooks/useUSVConfig.ts` - Configuration loading hook
+- `src/types/usv-config.ts` - TypeScript interfaces for config
+- `public/content/usv-configs/default.json` - Default USV configuration
+
+**LLM-driven design workflow:**
+1. User prompts changes (e.g., "Make the hull 20cm longer")
+2. Edit `default.json` config or component code
+3. Vite HMR triggers automatic reload
+4. Model updates in browser
 
 ## Key Technical Context
 
