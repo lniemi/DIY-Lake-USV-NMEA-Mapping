@@ -3,7 +3,8 @@
     "home": "Etusivu",
     "blog": "Projektiloki",
     "docs": "Dokumentaatio",
-    "graph": "Tietograafi"
+    "graph": "Tietograafi",
+    "viewer": "3D-katselin"
   },
   "common": {
     "readMore": "Lue lisää",
@@ -74,5 +75,30 @@
     "clickToOpen": "Klikkaa nähdäksesi tiedot",
     "close": "Sulje",
     "error": "Tietograafin lataus epäonnistui"
+  },
+  "viewer": {
+    "title": "USV 3D-katselin",
+    "subtitle": "Parametrinen malli USV-komponenteista",
+    "controls": {
+      "reset": "Palauta Näkymä",
+      "grid": "Näytä Ruudukko",
+      "axes": "Näytä Akselit",
+      "measurements": "Näytä Mitat"
+    },
+    "components": {
+      "title": "Komponentit",
+      "hull": "Runko",
+      "motorMount": "Moottorin Kiinnitys",
+      "sensorBracket": "Anturin Kiinnitys",
+      "electronics": "Elektroniikkakotelo",
+      "battery": "Akkuosasto"
+    },
+    "export": {
+      "title": "Vie",
+      "stl": "Vie STL",
+      "gltf": "Vie GLTF",
+      "config": "Vie Konfiguraatio",
+      "screenshot": "Tallenna Kuvakaappaus"
+    }
   }
 }

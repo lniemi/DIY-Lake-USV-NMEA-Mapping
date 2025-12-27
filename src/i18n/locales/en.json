@@ -3,7 +3,8 @@
     "home": "Home",
     "blog": "Project Log",
     "docs": "Documentation",
-    "graph": "Knowledge Graph"
+    "graph": "Knowledge Graph",
+    "viewer": "3D Viewer"
   },
   "common": {
     "readMore": "Read more",
@@ -74,5 +75,30 @@
     "clickToOpen": "Click to view details",
     "close": "Close",
     "error": "Failed to load knowledge graph"
+  },
+  "viewer": {
+    "title": "USV 3D Viewer",
+    "subtitle": "Parametric model of USV components",
+    "controls": {
+      "reset": "Reset View",
+      "grid": "Show Grid",
+      "axes": "Show Axes",
+      "measurements": "Show Dimensions"
+    },
+    "components": {
+      "title": "Components",
+      "hull": "Hull",
+      "motorMount": "Motor Mount",
+      "sensorBracket": "Sensor Bracket",
+      "electronics": "Electronics Housing",
+      "battery": "Battery Compartment"
+    },
+    "export": {
+      "title": "Export",
+      "stl": "Export STL",
+      "gltf": "Export GLTF",
+      "config": "Export Configuration",
+      "screenshot": "Save Screenshot"
+    }
   }
 }

@@ -21,11 +21,15 @@ export function useLocale() {
     if (currentLocale === 'en') {
       newPath = newPath
         .replace('/blog', '/blogi')
-        .replace('/docs', '/dokumentaatio');
+        .replace('/docs', '/dokumentaatio')
+        .replace('/graph', '/tietograafi')
+        .replace('/viewer', '/katselin');
     } else {
       newPath = newPath
         .replace('/blogi', '/blog')
-        .replace('/dokumentaatio', '/docs');
+        .replace('/dokumentaatio', '/docs')
+        .replace('/tietograafi', '/graph')
+        .replace('/katselin', '/viewer');
     }
 
     i18n.changeLanguage(newLocale);

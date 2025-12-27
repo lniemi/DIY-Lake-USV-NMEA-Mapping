@@ -12,12 +12,14 @@ export function Header() {
   const blogPath = locale === 'fi' ? 'blogi' : 'blog';
   const docsPath = locale === 'fi' ? 'dokumentaatio' : 'docs';
   const graphPath = locale === 'fi' ? 'tietograafi' : 'graph';
+  const viewerPath = locale === 'fi' ? 'katselin' : 'viewer';
 
   const navItems = [
     { to: `/${locale}`, label: t('nav.home'), end: true },
     { to: `/${locale}/${blogPath}`, label: t('nav.blog') },
     { to: `/${locale}/${docsPath}`, label: t('nav.docs') },
     { to: `/${locale}/${graphPath}`, label: t('nav.graph') },
+    { to: `/${locale}/${viewerPath}`, label: t('nav.viewer') },
   ];
 
   return (

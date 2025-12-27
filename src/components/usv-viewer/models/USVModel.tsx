@@ -1,0 +1,43 @@
+import { Hull } from './Hull';
+import { MotorMount } from './MotorMount';
+import { SensorBracket } from './SensorBracket';
+import { ElectronicsHousing } from './ElectronicsHousing';
+import { BatteryCompartment } from './BatteryCompartment';
+import type { USVConfig } from '../../../types/usv-config';
+
+interface USVModelProps {
+  config: USVConfig;
+  visibility: Record<string, boolean>;
+}
+
+export function USVModel({ config, visibility }: USVModelProps) {
+  return (
+    <group>
+      <Hull
+        config={config.components.hull}
+        material={config.materials.hull}
+        visible={visibility.hull}
+      />
+      <MotorMount
+        config={config.components.motorMount}
+        material={config.materials.mounts}
+        visible={visibility.motorMount}
+      />
+      <SensorBracket
+        config={config.components.sensorBracket}
+        material={config.materials.mounts}
+        visible={visibility.sensorBracket}
+      />
+      <ElectronicsHousing
+        config={config.components.electronicsHousing}
+        material={config.materials.electronics}
+        visible={visibility.electronics}
+      />
+      <BatteryCompartment
+        config={config.components.batteryCompartment}
+        material={config.materials.electronics}
+        visible={visibility.battery}
+      />
+    </group>
+  );
+}
