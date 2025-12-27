@@ -4,12 +4,13 @@ export interface LocalizedString {
 }
 
 export interface HullConfig {
-  type: 'catamaran' | 'monohull';
+  type: 'catamaran' | 'monohull' | 'trimaran';
   length: number;
   width: number;
   height: number;
   hullSpacing?: number;
   hullDiameter?: number;
+  centerHullDiameter?: number;
   deckThickness: number;
   material: string;
 }

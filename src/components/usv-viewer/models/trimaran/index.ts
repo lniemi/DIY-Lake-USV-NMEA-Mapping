@@ -1,0 +1,1 @@
+export { TrimaranUSVModel } from './TrimaranUSVModel';

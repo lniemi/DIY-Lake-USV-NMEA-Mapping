@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "name": "Trimaran USV Configuration",
+  "description": {
+    "en": "Trimaran configuration with three hulls for stability in choppy conditions",
+    "fi": "Trimaraani-konfiguraatio kolmella rungolla vakautta varten aallokossa"
+  },
+  "units": "meters",
+  "components": {
+    "hull": {
+      "type": "trimaran",
+      "length": 0.9,
+      "width": 0.5,
+      "height": 0.12,
+      "hullSpacing": 0.35,
+      "hullDiameter": 0.08,
+      "centerHullDiameter": 0.12,
+      "deckThickness": 0.005,
+      "material": "foam_core_fiberglass"
+    },
+    "motorMount": {
+      "type": "transom",
+      "width": 0.12,
+      "height": 0.2,
+      "depth": 0.06,
+      "mountHoleSpacing": 0.04,
+      "motorShaftDiameter": 0.008
+    },
+    "sensorBracket": {
+      "type": "adjustable_arm",
+      "armLength": 0.25,
+      "armWidth": 0.035,
+      "depthBelowHull": 0.12,
+      "transducerDiameter": 0.05,
+      "angleAdjustment": {
+        "min": -15,
+        "max": 15
+      }
+    },
+    "electronicsHousing": {
+      "type": "waterproof_box",
+      "length": 0.2,
+      "width": 0.14,
+      "height": 0.1,
+      "wallThickness": 0.003,
+      "lidSealThickness": 0.003
+    },
+    "batteryCompartment": {
+      "type": "sealed_compartment",
+      "length": 0.16,
+      "width": 0.12,
+      "height": 0.07,
+      "batteryType": "18650_pack"
+    },
+    "gnssModule": {
+      "type": "puck_antenna",
+      "baseWidth": 0.035,
+      "baseHeight": 0.018,
+      "antennaDiameter": 0.055,
+      "antennaHeight": 0.012
+    }
+  },
+  "materials": {
+    "hull": {
+      "color": "#A8D8EA",
+      "opacity": 0.9,
+      "roughness": 0.4,
+      "metalness": 0.1
+    },
+    "mounts": {
+      "color": "#374151",
+      "opacity": 1.0,
+      "roughness": 0.6,
+      "metalness": 0.3
+    },
+    "electronics": {
+      "color": "#F59E0B",
+      "opacity": 0.7,
+      "roughness": 0.3,
+      "metalness": 0.2
+    }
+  }
+}

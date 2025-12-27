@@ -82,7 +82,8 @@
     "modelSelector": {
       "title": "Malli",
       "large": "Iso USV (1.2m)",
-      "small": "Pieni USV (0.65m)"
+      "small": "Pieni USV (0.65m)",
+      "trimaran": "Trimaraani-USV (0.9m)"
     },
     "controls": {
       "reset": "Palauta Näkymä",
