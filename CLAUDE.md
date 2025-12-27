@@ -69,19 +69,75 @@ The USV 3D Viewer (`/en/viewer` or `/fi/katselin`) is a parametric CAD-like view
 - **Three.js** + **React Three Fiber** (no drei dependency)
 - Custom OrbitControls implementation
 - JSON-based configuration system
+- **Isolated model folders** for each USV variant
+
+**Architecture:**
+
+```
+src/components/usv-viewer/
+├── models/
+│   ├── large/                    # Large USV (1.2m hull)
+│   │   ├── Hull.tsx
+│   │   ├── MotorMount.tsx
+│   │   ├── SensorBracket.tsx
+│   │   ├── ElectronicsHousing.tsx
+│   │   ├── BatteryCompartment.tsx
+│   │   ├── GNSSModule.tsx
+│   │   ├── LargeUSVModel.tsx    # Assembly component
+│   │   └── index.ts
+│   │
+│   ├── small/                    # Small USV (0.65m hull)
+│   │   ├── Hull.tsx
+│   │   ├── MotorMount.tsx
+│   │   ├── SensorBracket.tsx
+│   │   ├── ElectronicsHousing.tsx
+│   │   ├── BatteryCompartment.tsx
+│   │   ├── GNSSModule.tsx
+│   │   ├── SmallUSVModel.tsx    # Assembly component
+│   │   └── index.ts
+│   │
+│   └── USVModelFactory.tsx      # Selects model based on type
+│
+├── panels/
+│   ├── ControlPanel.tsx
+│   ├── ViewControls.tsx
+│   ├── ComponentList.tsx
+│   ├── ModelSelector.tsx        # Switch between Large/Small USV
+│   └── ExportPanel.tsx
+│
+├── USVViewer.tsx                # Main container
+├── ViewerCanvas.tsx             # Three.js canvas
+└── DimensionAnnotations.tsx
+```
 
 **Key files:**
-- `src/components/usv-viewer/USVViewer.tsx` - Main container
+- `src/components/usv-viewer/USVViewer.tsx` - Main container, manages state
 - `src/components/usv-viewer/ViewerCanvas.tsx` - Three.js canvas with custom controls
-- `src/components/usv-viewer/models/` - Parametric 3D components (Hull, MotorMount, etc.)
-- `src/components/usv-viewer/panels/` - UI control panels
+- `src/components/usv-viewer/models/USVModelFactory.tsx` - Factory to select Large or Small model
+- `src/components/usv-viewer/models/large/` - Large USV components (1.2m hull)
+- `src/components/usv-viewer/models/small/` - Small USV components (0.65m hull)
+- `src/components/usv-viewer/panels/ModelSelector.tsx` - UI to switch models
 - `src/hooks/useUSVConfig.ts` - Configuration loading hook
 - `src/types/usv-config.ts` - TypeScript interfaces for config
-- `public/content/usv-configs/default.json` - Default USV configuration
+- `public/content/usv-configs/default.json` - Large USV configuration
+- `public/content/usv-configs/small.json` - Small USV configuration
+
+**Model isolation principle:**
+Each USV variant (`large/`, `small/`) has its own complete set of component files with hardcoded positions appropriate for that hull size. This avoids scaling/positioning issues when switching between models. Components are duplicated rather than shared.
+
+**Adding a new USV variant:**
+1. Create new folder under `models/` (e.g., `models/medium/`)
+2. Copy all component files from an existing variant
+3. Adjust positions in each component for the new hull dimensions
+4. Create assembly component (e.g., `MediumUSVModel.tsx`)
+5. Create `index.ts` export
+6. Add case to `USVModelFactory.tsx`
+7. Create config JSON in `public/content/usv-configs/`
+8. Add option to `ModelSelector.tsx` and i18n files
 
 **LLM-driven design workflow:**
 1. User prompts changes (e.g., "Make the hull 20cm longer")
-2. Edit `default.json` config or component code
+2. Edit the appropriate config JSON or component files in the model folder
 3. Vite HMR triggers automatic reload
 4. Model updates in browser
 
