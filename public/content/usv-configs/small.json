@@ -1,36 +1,36 @@
 {
   "version": "1.0.0",
-  "name": "Default USV Configuration",
+  "name": "Small USV Configuration",
   "description": {
-    "en": "Standard configuration for lake mapping USV",
-    "fi": "Standardikonfiguraatio järvikartoitus-USV:lle"
+    "en": "Compact configuration for smaller lake mapping USV",
+    "fi": "Kompakti konfiguraatio pienemmälle järvikartoitus-USV:lle"
   },
   "units": "meters",
   "components": {
     "hull": {
       "type": "catamaran",
-      "length": 1.2,
-      "width": 0.6,
-      "height": 0.15,
-      "hullSpacing": 0.45,
-      "hullDiameter": 0.12,
-      "deckThickness": 0.006,
+      "length": 0.65,
+      "width": 0.35,
+      "height": 0.08,
+      "hullSpacing": 0.25,
+      "hullDiameter": 0.065,
+      "deckThickness": 0.004,
       "material": "foam_core_fiberglass"
     },
     "motorMount": {
       "type": "transom",
-      "width": 0.15,
-      "height": 0.25,
-      "depth": 0.08,
-      "mountHoleSpacing": 0.05,
-      "motorShaftDiameter": 0.008
+      "width": 0.08,
+      "height": 0.14,
+      "depth": 0.04,
+      "mountHoleSpacing": 0.03,
+      "motorShaftDiameter": 0.006
     },
     "sensorBracket": {
       "type": "adjustable_arm",
-      "armLength": 0.3,
-      "armWidth": 0.04,
-      "depthBelowHull": 0.15,
-      "transducerDiameter": 0.055,
+      "armLength": 0.16,
+      "armWidth": 0.025,
+      "depthBelowHull": 0.08,
+      "transducerDiameter": 0.035,
       "angleAdjustment": {
         "min": -15,
         "max": 15
@@ -38,25 +38,25 @@
     },
     "electronicsHousing": {
       "type": "waterproof_box",
-      "length": 0.25,
-      "width": 0.18,
-      "height": 0.12,
-      "wallThickness": 0.004,
-      "lidSealThickness": 0.003
+      "length": 0.14,
+      "width": 0.10,
+      "height": 0.07,
+      "wallThickness": 0.003,
+      "lidSealThickness": 0.002
     },
     "batteryCompartment": {
       "type": "sealed_compartment",
-      "length": 0.2,
-      "width": 0.15,
-      "height": 0.08,
+      "length": 0.11,
+      "width": 0.08,
+      "height": 0.045,
       "batteryType": "18650_pack"
     },
     "gnssModule": {
       "type": "puck_antenna",
-      "baseWidth": 0.04,
-      "baseHeight": 0.02,
-      "antennaDiameter": 0.06,
-      "antennaHeight": 0.015
+      "baseWidth": 0.025,
+      "baseHeight": 0.012,
+      "antennaDiameter": 0.035,
+      "antennaHeight": 0.01
     }
   },
   "materials": {

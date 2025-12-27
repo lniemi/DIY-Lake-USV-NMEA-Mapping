@@ -79,6 +79,11 @@
   "viewer": {
     "title": "USV 3D Viewer",
     "subtitle": "Parametric model of USV components",
+    "modelSelector": {
+      "title": "Model",
+      "large": "Large USV (1.2m)",
+      "small": "Small USV (0.65m)"
+    },
     "controls": {
       "reset": "Reset View",
       "grid": "Show Grid",
@@ -91,7 +96,8 @@
       "motorMount": "Motor Mount",
       "sensorBracket": "Sensor Bracket",
       "electronics": "Electronics Housing",
-      "battery": "Battery Compartment"
+      "battery": "Battery Compartment",
+      "gnss": "GNSS Module"
     },
     "export": {
       "title": "Export",

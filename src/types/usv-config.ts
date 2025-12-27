@@ -52,6 +52,14 @@ export interface BatteryCompartmentConfig {
   batteryType: string;
 }
 
+export interface GNSSModuleConfig {
+  type: string;
+  baseWidth: number;
+  baseHeight: number;
+  antennaDiameter: number;
+  antennaHeight: number;
+}
+
 export interface MaterialConfig {
   color: string;
   opacity: number;
@@ -71,6 +79,7 @@ export interface USVComponentsConfig {
   sensorBracket: SensorBracketConfig;
   electronicsHousing: ElectronicsHousingConfig;
   batteryCompartment: BatteryCompartmentConfig;
+  gnssModule?: GNSSModuleConfig;
 }
 
 export interface USVConfig {

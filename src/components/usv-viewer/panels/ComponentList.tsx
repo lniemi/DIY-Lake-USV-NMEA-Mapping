@@ -14,6 +14,7 @@ export function ComponentList({ visibility, onToggle }: ComponentListProps) {
     { key: 'sensorBracket', label: t('viewer.components.sensorBracket') },
     { key: 'electronics', label: t('viewer.components.electronics') },
     { key: 'battery', label: t('viewer.components.battery') },
+    { key: 'gnss', label: t('viewer.components.gnss') },
   ];
 
   return (

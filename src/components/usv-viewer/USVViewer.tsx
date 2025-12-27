@@ -4,13 +4,15 @@ import { ViewerCanvas } from './ViewerCanvas';
 import { ControlPanel } from './panels/ControlPanel';
 
 export function USVViewer() {
-  const { config, loading, error } = useUSVConfig('default');
+  const [selectedModel, setSelectedModel] = useState('default');
+  const { config, loading, error } = useUSVConfig(selectedModel);
   const [componentVisibility, setComponentVisibility] = useState<Record<string, boolean>>({
     hull: true,
     motorMount: true,
     sensorBracket: true,
     electronics: true,
     battery: true,
+    gnss: true,
   });
   const [showGrid, setShowGrid] = useState(true);
   const [showAxes, setShowAxes] = useState(true);
@@ -48,6 +50,8 @@ export function USVViewer() {
             setComponentVisibility(prev => ({ ...prev, [key]: !prev[key] }))
           }
           config={config}
+          selectedModel={selectedModel}
+          onModelChange={setSelectedModel}
         />
       </div>
 

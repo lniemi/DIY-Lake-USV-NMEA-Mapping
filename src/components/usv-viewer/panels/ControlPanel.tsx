@@ -1,6 +1,7 @@
 import { ViewControls } from './ViewControls';
 import { ComponentList } from './ComponentList';
 import { ExportPanel } from './ExportPanel';
+import { ModelSelector } from './ModelSelector';
 import type { USVConfig } from '../../../types/usv-config';
 
 interface ControlPanelProps {
@@ -13,6 +14,8 @@ interface ControlPanelProps {
   componentVisibility: Record<string, boolean>;
   onToggleComponent: (key: string) => void;
   config: USVConfig;
+  selectedModel: string;
+  onModelChange: (model: string) => void;
 }
 
 export function ControlPanel({
@@ -25,9 +28,18 @@ export function ControlPanel({
   componentVisibility,
   onToggleComponent,
   config,
+  selectedModel,
+  onModelChange,
 }: ControlPanelProps) {
   return (
     <>
+      <div className="bg-white rounded-lg border border-paper-200 p-4">
+        <ModelSelector
+          selectedModel={selectedModel}
+          onModelChange={onModelChange}
+        />
+      </div>
+
       <div className="bg-white rounded-lg border border-paper-200 p-4">
         <ViewControls
           showGrid={showGrid}

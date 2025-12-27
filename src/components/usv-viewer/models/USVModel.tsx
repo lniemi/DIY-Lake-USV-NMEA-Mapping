@@ -3,6 +3,7 @@ import { MotorMount } from './MotorMount';
 import { SensorBracket } from './SensorBracket';
 import { ElectronicsHousing } from './ElectronicsHousing';
 import { BatteryCompartment } from './BatteryCompartment';
+import { GNSSModule } from './GNSSModule';
 import type { USVConfig } from '../../../types/usv-config';
 
 interface USVModelProps {
@@ -38,6 +39,14 @@ export function USVModel({ config, visibility }: USVModelProps) {
         material={config.materials.electronics}
         visible={visibility.battery}
       />
+      {config.components.gnssModule && (
+        <GNSSModule
+          config={config.components.gnssModule}
+          material={config.materials.electronics}
+          visible={visibility.gnss}
+          hullLength={config.components.hull.length}
+        />
+      )}
     </group>
   );
 }

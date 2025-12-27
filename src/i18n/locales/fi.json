@@ -79,6 +79,11 @@
   "viewer": {
     "title": "USV 3D-katselin",
     "subtitle": "Parametrinen malli USV-komponenteista",
+    "modelSelector": {
+      "title": "Malli",
+      "large": "Iso USV (1.2m)",
+      "small": "Pieni USV (0.65m)"
+    },
     "controls": {
       "reset": "Palauta Näkymä",
       "grid": "Näytä Ruudukko",
@@ -91,7 +96,8 @@
       "motorMount": "Moottorin Kiinnitys",
       "sensorBracket": "Anturin Kiinnitys",
       "electronics": "Elektroniikkakotelo",
-      "battery": "Akkuosasto"
+      "battery": "Akkuosasto",
+      "gnss": "GNSS-moduuli"
     },
     "export": {
       "title": "Vie",
