@@ -1,6 +1,15 @@
 {
   "posts": [
     {
+      "slug": "visualization-tools-and-hull-research",
+      "title": "New Visualization Tools and Hull Type Research",
+      "date": "2025-12-27",
+      "excerpt": "Added a knowledge graph and 3D model viewer to the documentation site. Also reviewed literature on small USV hull types, with insights from a survey of 84 vessels.",
+      "file": "blog/2025-12-27-visualization-tools-and-hull-research.en.md",
+      "tags": ["software", "hull", "decision"],
+      "readingTime": 4
+    },
+    {
       "slug": "sensor-approach-decision",
       "title": "Choosing the Sensor Approach: Commercial Fishfinder vs DIY Sonar",
       "date": "2025-12-26",

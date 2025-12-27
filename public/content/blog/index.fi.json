@@ -1,6 +1,15 @@
 {
   "posts": [
     {
+      "slug": "visualization-tools-and-hull-research",
+      "title": "Uudet visualisointityökalut ja runkotyyppitutkimus",
+      "date": "2025-12-27",
+      "excerpt": "Dokumentaatiosivustolle lisättiin tietograafi ja 3D-mallin katselin. Lisäksi katsaus kirjallisuuteen pienistä USV-runkotyypeistä, 84 aluksen kartoituksen pohjalta.",
+      "file": "blog/2025-12-27-visualization-tools-and-hull-research.fi.md",
+      "tags": ["software", "hull", "decision"],
+      "readingTime": 4
+    },
+    {
       "slug": "sensor-approach-decision",
       "title": "Anturilähestymistavan valinta: Kaupallinen kaikuluotain vai DIY-luotain",
       "date": "2025-12-26",
