@@ -1,6 +1,6 @@
 ---
 title: "Projektin aloitus: Järvikartoitusaluksen rakentaminen"
-date: "2025-01-01"
+date: "2025-12-25"
 ---
 
 # Projektin aloitus: Järvikartoitusaluksen rakentaminen

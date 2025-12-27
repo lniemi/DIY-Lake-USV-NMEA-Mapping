@@ -1,6 +1,6 @@
 ---
 title: "Anturilähestymistavan valinta: Kaupallinen kaikuluotain vai DIY-luotain"
-date: "2025-01-02"
+date: "2025-12-26"
 ---
 
 # Anturilähestymistavan valinta: Kaupallinen kaikuluotain vai DIY-luotain

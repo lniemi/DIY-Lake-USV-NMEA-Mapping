@@ -1,6 +1,6 @@
 ---
 title: "Project Kickoff: Building a Lake Mapping USV"
-date: "2025-01-01"
+date: "2025-12-25"
 ---
 
 # Project Kickoff: Building a Lake Mapping USV

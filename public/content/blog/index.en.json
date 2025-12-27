@@ -3,18 +3,18 @@
     {
       "slug": "sensor-approach-decision",
       "title": "Choosing the Sensor Approach: Commercial Fishfinder vs DIY Sonar",
-      "date": "2025-01-02",
+      "date": "2025-12-26",
       "excerpt": "Documenting the decision to use the Open Echo project for DIY sonar instead of commercial fishfinders. Covers the trade-offs, hardware choices, and inspiration from related work.",
-      "file": "blog/2025-01-02-sensor-approach-decision.en.md",
+      "file": "blog/2025-12-26-sensor-approach-decision.en.md",
       "tags": ["hardware", "decision", "open-echo"],
       "readingTime": 6
     },
     {
       "slug": "project-kickoff",
       "title": "Project Kickoff: Building a Lake Mapping USV",
-      "date": "2025-01-01",
+      "date": "2025-12-25",
       "excerpt": "Welcome to the DIY Lake USV Mapping project! This is the beginning of our journey to create an open-source solution for mapping lake depths using consumer fishfinder equipment.",
-      "file": "blog/2025-01-01-project-kickoff.en.md",
+      "file": "blog/2025-12-25-project-kickoff.en.md",
       "tags": ["announcement", "planning"],
       "readingTime": 3
     }

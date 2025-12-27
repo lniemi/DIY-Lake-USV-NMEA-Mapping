@@ -1,6 +1,6 @@
 ---
 title: "Choosing the Sensor Approach: Commercial Fishfinder vs DIY Sonar"
-date: "2025-01-02"
+date: "2025-12-26"
 ---
 
 # Choosing the Sensor Approach: Commercial Fishfinder vs DIY Sonar
