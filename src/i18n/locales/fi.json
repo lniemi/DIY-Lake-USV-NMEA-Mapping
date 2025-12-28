@@ -82,6 +82,7 @@
     "modelSelector": {
       "title": "Malli",
       "large": "Iso USV (1.2m)",
+      "medium": "Keskikokoinen USV (0.9m)",
       "small": "Pieni USV (0.65m)",
       "trimaran": "Trimaraani-USV (0.9m)"
     },

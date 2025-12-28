@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "name": "Medium USV Configuration",
+  "description": {
+    "en": "Mid-size configuration for lake mapping USV",
+    "fi": "Keskikokoinen konfiguraatio järvikartoitus-USV:lle"
+  },
+  "units": "meters",
+  "components": {
+    "hull": {
+      "type": "catamaran",
+      "length": 0.9,
+      "width": 0.48,
+      "height": 0.12,
+      "hullSpacing": 0.35,
+      "hullDiameter": 0.095,
+      "deckThickness": 0.005,
+      "material": "foam_core_fiberglass"
+    },
+    "motorMount": {
+      "type": "transom",
+      "width": 0.12,
+      "height": 0.2,
+      "depth": 0.06,
+      "mountHoleSpacing": 0.04,
+      "motorShaftDiameter": 0.007
+    },
+    "sensorBracket": {
+      "type": "adjustable_arm",
+      "armLength": 0.23,
+      "armWidth": 0.032,
+      "depthBelowHull": 0.12,
+      "transducerDiameter": 0.045,
+      "angleAdjustment": {
+        "min": -15,
+        "max": 15
+      }
+    },
+    "electronicsHousing": {
+      "type": "waterproof_box",
+      "length": 0.2,
+      "width": 0.14,
+      "height": 0.1,
+      "wallThickness": 0.0035,
+      "lidSealThickness": 0.0025
+    },
+    "batteryCompartment": {
+      "type": "sealed_compartment",
+      "length": 0.16,
+      "width": 0.12,
+      "height": 0.065,
+      "batteryType": "18650_pack"
+    },
+    "gnssModule": {
+      "type": "puck_antenna",
+      "baseWidth": 0.032,
+      "baseHeight": 0.016,
+      "antennaDiameter": 0.048,
+      "antennaHeight": 0.012
+    }
+  },
+  "materials": {
+    "hull": {
+      "color": "#D4E8D4",
+      "opacity": 0.9,
+      "roughness": 0.4,
+      "metalness": 0.1
+    },
+    "mounts": {
+      "color": "#4A5568",
+      "opacity": 1.0,
+      "roughness": 0.6,
+      "metalness": 0.3
+    },
+    "electronics": {
+      "color": "#68D391",
+      "opacity": 0.7,
+      "roughness": 0.3,
+      "metalness": 0.2
+    }
+  }
+}

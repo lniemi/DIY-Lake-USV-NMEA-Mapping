@@ -7,6 +7,7 @@ interface ModelSelectorProps {
 
 const models = [
   { key: 'default', labelKey: 'viewer.modelSelector.large' },
+  { key: 'medium', labelKey: 'viewer.modelSelector.medium' },
   { key: 'small', labelKey: 'viewer.modelSelector.small' },
   { key: 'trimaran', labelKey: 'viewer.modelSelector.trimaran' },
 ];

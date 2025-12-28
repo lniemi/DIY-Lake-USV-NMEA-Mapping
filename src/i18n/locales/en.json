@@ -82,6 +82,7 @@
     "modelSelector": {
       "title": "Model",
       "large": "Large USV (1.2m)",
+      "medium": "Medium USV (0.9m)",
       "small": "Small USV (0.65m)",
       "trimaran": "Trimaran USV (0.9m)"
     },
